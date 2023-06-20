@@ -9,12 +9,12 @@ const Timeline = props => {
       <TimelineEvent
         person={event.person}
         status={event.status}
-        timestamp={event.timastamp}
+        timestamp={event.timestamp}
       />
     ));
   };
 
-  return <ul className='timeline'>{getTimeLineJSX(props)}</ul>;
+  return <ul className='timeline'>{getTimeLineJSX(props.timelineData)}</ul>;
 };
 
 export default Timeline;
