@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>{title}</p>
+        <p className='App-title'>{title}</p>
       </header>
-      <section>
+      <section className='App-main'>
         <Timeline timelineData={timelineData.events} />
       </section>
     </div>
